@@ -1,0 +1,34 @@
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr); 
+  gap: 16px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.card {
+  width: 300px; 
+  border: 1px solid #e78326;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 12px auto;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  font-weight: 500;
+  background-color: #333333;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background-color: rgb(124, 128, 128);
+}
+
+.cardContent {
+  padding: 12px;
+}
+
+.cardDescription {
+  font-size: 14px;
+  color: #ccc; /* Slightly lighter text for better contrast */
+}

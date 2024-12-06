@@ -1,0 +1,80 @@
+.container {
+    padding: 20px;
+  }
+  
+  .movieGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .movieCard {
+    width: 200px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .movieCard img {
+    border-radius: 8px;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .closeButton:hover {
+    background: darkred;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modalContent {
+    position: relative;
+    background: #3f3838;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .modalCloseButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  
+  .modalCloseButton:hover {
+    background: darkred;
+  }
+  
