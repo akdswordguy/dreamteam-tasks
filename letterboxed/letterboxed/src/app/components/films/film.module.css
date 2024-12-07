@@ -77,4 +77,20 @@
   .modalCloseButton:hover {
     background: darkred;
   }
+
+  .addButton{
+    background-color: #d05555; 
+    border: none;
+    color: rgb(22, 15, 15);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    font-weight:bolder;
+  }
+  .addButton:hover{
+    background-color: #8a0d0d;
+    border-radius: 5%;
+  }
   

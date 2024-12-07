@@ -27,8 +27,7 @@ const Blog = ({ description }) => {
         <p className={styles.blogDescription}>{description}</p>
         <div className={styles.buttons}>
           <button className={styles.likeButton} onClick={handleLike}>
-          👍 Like {likes > 0 && `(${likes})`
-          }
+            👍 Like {likes > 0 && `(${likes})`}
           </button>
           <button className={styles.commentButton} onClick={() => setShowCommentBox(!showCommentBox)} >
             💬 Comment

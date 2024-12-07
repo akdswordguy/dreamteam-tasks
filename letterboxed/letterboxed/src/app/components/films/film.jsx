@@ -28,13 +28,9 @@ const FilmPage = () => {
 
     fetchMovies();
   }, []);
-
-  // Handle removing a movie card
   const handleRemoveMovie = (movieId) => {
     setMovies((prevMovies) => prevMovies.filter((movie) => movie.id !== movieId));
   };
-
-  // Render movie cards
   const renderMovies = () => {
     if (error) {
       return <div className={styles.error}>Error: {error}</div>;
@@ -70,14 +66,11 @@ const FilmPage = () => {
       <h1>Popular Movies</h1>
       <div className={styles.movieGrid}>{renderMovies()}</div>
 
-      {/* Modal for displaying movie details */}
+     
       {selectedMovie && (
   <div className={styles.modal}>
     <div className={styles.modalContent}>
-      <button
-        className={styles.modalCloseButton}
-        onClick={() => setSelectedMovie(null)}
-      >
+      <button className={styles.modalCloseButton} onClick={() => setSelectedMovie(null)}>
         ✕
       </button>
       <h2>{selectedMovie.title}</h2>
@@ -85,6 +78,7 @@ const FilmPage = () => {
       <p>Release Date: {selectedMovie.release_date}</p>
       <p>Vote Average: {selectedMovie.vote_average}</p>
       <p>Popularity: {selectedMovie.popularity}</p>
+      <button className={styles.addButton}>ADD TO PLAYLIST</button>
       <button onClick={() => setSelectedMovie(null)}></button>
     </div>
   </div>
